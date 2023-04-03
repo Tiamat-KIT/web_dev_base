@@ -1,7 +1,8 @@
-// "use client"
+//"use client"
 
 import { Example } from "@/Component/JestExample"
 import SeoComponent from "@/Component/SEO/SEO"
+import { Page } from "@/stories/Page"
 import { Metadata } from "next"
 import dynamic from "next/dynamic"
 import { Suspense } from "react"
@@ -22,9 +23,9 @@ export async function generateMetadata(): Promise<Metadata>{
 export default async function Home(){
 
   return (
-    <>
+    <div>
       <h1 className="text-3xl">Template!</h1>
       <Example />
-    </>
+    </div>
   )
 }
