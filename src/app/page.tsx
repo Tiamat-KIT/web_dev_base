@@ -1,5 +1,6 @@
 // "use client"
 
+import { Example } from "@/Component/JestExample"
 import SeoComponent from "@/Component/SEO/SEO"
 import { Metadata } from "next"
 import dynamic from "next/dynamic"
@@ -23,6 +24,7 @@ export default async function Home(){
   return (
     <>
       <h1 className="text-3xl">Template!</h1>
+      <Example />
     </>
   )
 }
