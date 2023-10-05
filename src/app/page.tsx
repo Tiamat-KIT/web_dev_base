@@ -1,5 +1,6 @@
 //"use client"
-import SeoComponent from "@/Component/SEO/SEO"
+import DataTable from "@/components/Auto/UI/DataTable"
+import SeoComponent from "@/components/SEO"
 import { Page } from "@/stories/Page"
 import { Metadata } from "next"
 import dynamic from "next/dynamic"
@@ -21,8 +22,9 @@ export async function generateMetadata(): Promise<Metadata>{
 export default async function Home(){
 
   return (
-    <div>
+    <>
       <h1 className="text-3xl">Template!</h1>
-    </div>
+      <DataTable />
+    </>
   )
 }

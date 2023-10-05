@@ -2,6 +2,7 @@
 import HeadNavbar from '@/components/Auto/UI/HeadNavbar';
 import './globals.css'
 import { SessionProvider } from "next-auth/react";
+import Footer from '@/components/Auto/UI/Footer';
 
 export default function RootLayout({
   children,
@@ -17,9 +18,8 @@ export default function RootLayout({
           {children}
         </SessionProvider>
         */}
-        <div>
         {children}
-        </div>        
+        <Footer />
       </body>
     </html>
   )

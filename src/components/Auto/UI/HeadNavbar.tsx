@@ -1,9 +1,9 @@
 export default function HeadNavbar(){
     return (
-        <div className="navbar">
+        <nav className="navbar">
             <a className="btn btn-ghost capitalize text-2xl">
                 Alert App
             </a>
-        </div>
+        </nav>
     )
 }
